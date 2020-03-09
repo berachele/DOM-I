@@ -103,3 +103,13 @@ document.querySelector('footer p').textContent = siteContent.footer.copyright;
 document.querySelectorAll('a').forEach(a => (a.style.color = "green"))
 
 // Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want.
+const newContentOne = document.createElement('h5');
+newContentOne.textContent = "I'm an h5!";
+
+const newContentTwo = document.createElement('a');
+newContentTwo.textContent = "⚓︎ Ahoy matey!"
+
+const parent = document.querySelector('nav');
+
+parent.prepend(newContentOne);
+parent.append(newContentTwo);
