@@ -96,3 +96,10 @@ contactP[2].textContent = siteContent.contact.email;
 
 //footer
 document.querySelector('footer p').textContent = siteContent.footer.copyright;
+
+
+//Task 3
+// Change the color of the navigation text to be green.
+document.querySelectorAll('a').forEach(a => (a.style.color = "green"))
+
+// Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want.
