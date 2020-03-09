@@ -52,8 +52,24 @@ document.querySelector('a:nth-of-type(6)').textContent = siteContent.nav['nav-it
 //cta section
 document.querySelector('.cta .cta-text h1').textContent = siteContent.cta['h1'];
 document.querySelector('.cta .cta-text button').textContent = siteContent.cta['button'];
-document.getElementById('cta-img').setAttribute('src', siteContent.cta['img-src']);
+// document.getElementById('cta-img').setAttribute('src', siteContent.cta['img-src']);
+document.getElementById('cta-img').src = siteContent.cta['img-src'];
+
 
 //main-content section
 //top-content
-document.querySelector('h4').textContent = siteContent.main-content['features-h4'];
+document.querySelector('.text-content:nth-of-type(1) h4').textContent = siteContent['main-content']['features-h4'];
+document.querySelector('.text-content:nth-of-type(1) p').textContent = siteContent['main-content']['features-content'];
+document.querySelector('.text-content:nth-of-type(2) h4').textContent = siteContent['main-content']['about-h4'];
+document.querySelector('.text-content:nth-of-type(2) p').textContent = siteContent['main-content']['about-content'];
+
+//middle-image
+document.getElementById('middle-img').src = siteContent['main-content']['middle-img-src'];
+
+//bottom-content
+document.querySelector('.text-content:nth-of-type(3) h4').textContent = siteContent['main-content']['services-h4'];
+document.querySelector('.text-content:nth-of-type(3) p').textContent = siteContent['main-content']['services-content'];
+document.querySelector('.text-content:nth-of-type(4) h4').textContent = siteContent['main-content']['product-h4'];
+document.querySelector('.text-content:nth-of-type(4) p').textContent = siteContent['main-content']['product-content'];
+document.querySelector('.text-content:nth-of-type(5) h4').textContent = siteContent['main-content']['vision-h4'];
+document.querySelector('.text-content:nth-of-type(5) p').textContent = siteContent['main-content']['vision-content'];
