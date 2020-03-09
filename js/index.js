@@ -41,9 +41,19 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-document.querySelector('nav a:nth-of-type(1)').textContent = siteContent.nav['nav-item-1'];
-document.querySelector('nav a:nth-of-type(2)').textContent = siteContent.nav['nav-item-2'];
-document.querySelector('nav a:nth-of-type(3)').textContent = siteContent.nav['nav-item-3'];
-document.querySelector('nav a:nth-of-type(4)').textContent = siteContent.nav['nav-item-4'];
-document.querySelector('nav a:nth-of-type(5)').textContent = siteContent.nav['nav-item-5'];
-document.querySelector('nav a:nth-of-type(6)').textContent = siteContent.nav['nav-item-6'];
+//Adding the anchor tags
+document.querySelector('a:nth-of-type(1)').textContent = siteContent.nav['nav-item-1'];
+document.querySelector('a:nth-of-type(2)').textContent = siteContent.nav['nav-item-2'];
+document.querySelector('a:nth-of-type(3)').textContent = siteContent.nav['nav-item-3'];
+document.querySelector('a:nth-of-type(4)').textContent = siteContent.nav['nav-item-4'];
+document.querySelector('a:nth-of-type(5)').textContent = siteContent.nav['nav-item-5'];
+document.querySelector('a:nth-of-type(6)').textContent = siteContent.nav['nav-item-6'];
+
+//cta section
+document.querySelector('.cta .cta-text h1').textContent = siteContent.cta['h1'];
+document.querySelector('.cta .cta-text button').textContent = siteContent.cta['button'];
+document.getElementById('cta-img').setAttribute('src', siteContent.cta['img-src']);
+
+//main-content section
+//top-content
+document.querySelector('h4').textContent = siteContent.main-content['features-h4'];
